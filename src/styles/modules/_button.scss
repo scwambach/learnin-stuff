@@ -1,0 +1,21 @@
+.button {
+  cursor: pointer;
+
+  &.unstyled {
+    padding: 0;
+    display: inline-block;
+    appearance: none;
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    border-radius: 0;
+    width: auto;
+    height: fit-content;
+    margin: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
