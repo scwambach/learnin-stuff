@@ -1,11 +1,11 @@
 {
   "Map Loop": {
     "prefix": "map-loop",
-    "body": ["{$1.map($2 => (", "  $3", "))}"]
+    "body": ["{$1.map($2 => (", "  $3", "))}"],
   },
   "Dangerously Set HTML": {
     "prefix": "danger-html",
-    "body": ["<div dangerouslySetInnerHTML={{", "  __html: copy,", "}}", "/>"]
+    "body": ["<div dangerouslySetInnerHTML={{", "  __html: copy,", "}}", "/>"],
   },
   "SanityComponent": {
     "prefix": "sanityComponent",
@@ -33,8 +33,8 @@
       "    },",
       "  },",
       "};",
-      ""
-    ]
+      "",
+    ],
   },
   "Dump": {
     "prefix": "dump",
@@ -58,7 +58,7 @@
       "</code>",
       "",
       "",
-      ""
-    ]
-  }
+      "",
+    ],
+  },
 }

@@ -48,14 +48,14 @@ export default defineConfig({
                       .title("Authors")
                       .child(S.documentTypeList("author").title("Authors"))
                       .icon(UserCircle),
-                  ])
+                  ]),
               ),
             S.listItem()
               .title("Global Info")
               .child(
                 S.document()
                   .schemaType("globalSettings")
-                  .documentId("globalSettings")
+                  .documentId("globalSettings"),
               )
               .icon(Globe),
           ]),
