@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Pre-Commit ✅"
+
+yarn lint
+
+yarn check-format
+
+echo 'All checks passed! Committing now.'

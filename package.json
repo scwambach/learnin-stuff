@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prepare": "husky install",
+    "check-format": "prettier --write .",
     "lint": "next lint"
   },
   "dependencies": {
