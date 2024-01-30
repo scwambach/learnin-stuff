@@ -1,4 +1,4 @@
-import "@picocss/pico";
+// import "@picocss/pico";
 import "@styles/main.scss";
 
 export default function RootLayout({
