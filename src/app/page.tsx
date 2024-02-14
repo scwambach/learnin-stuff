@@ -23,19 +23,7 @@ export default async function Home() {
     <MainLayout {...global}>
       <div className="container">
         <code>
-          <pre
-            style={{
-              fontFamily: "monospace",
-              display: "block",
-              padding: "50px",
-              color: "#88ffbf",
-              backgroundColor: "black",
-              textAlign: "center",
-              whiteSpace: "pre-wrap",
-            }}
-          >
-            [[ CONTENT GOES HERE ]]
-          </pre>
+          <pre>[[ CONTENT GOES HERE ]]</pre>
         </code>
       </div>
     </MainLayout>
