@@ -1,20 +1,30 @@
 import { MainLayout } from "@components/global/MainLayout";
+import { PortableTextBlock } from "@portabletext/types";
 import { client } from "@utils/client";
 import { ALL_POSTS_QUERY } from "@utils/queries/allPosts";
+import { GLOBAL_QUERY } from "@utils/queries/global";
+import { GlobalProps, ImageProps, PostProps } from "@utils/types";
 
 async function getData() {
-  const data = await client.fetch(ALL_POSTS_QUERY);
+  const data = await client.fetch(`{
+    "posts": ${ALL_POSTS_QUERY},
+    "global": ${GLOBAL_QUERY}
+  }`);
   return data;
 }
 
 export default async function Home() {
-  const data = await getData();
+  const { posts, global } = (await getData()) as {
+    global: GlobalProps;
+    posts: PostProps[];
+  };
 
   return (
-    <MainLayout>
+    <MainLayout {...global}>
       <div className="container">
-        <button>Button</button>
-        <input type="submit" />
+        <code>
+          <pre>[[ CONTENT GOES HERE ]]</pre>
+        </code>
       </div>
     </MainLayout>
   );

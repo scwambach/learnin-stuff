@@ -11,9 +11,9 @@
       "  ...,",
       "}",
       "`;",
-      ""
+      "",
     ],
-    "description": "Module"
+    "description": "Module",
   },
   "New Test": {
     "prefix": "newTest",
@@ -31,9 +31,9 @@
       "    const component = getByTestId('$3');",
       "    expect(component).toBeVisible();",
       "  });",
-      "});      "
+      "});      ",
     ],
-    "description": "Module"
+    "description": "Module",
   },
   "New Component": {
     "prefix": "newComponent",
@@ -61,9 +61,9 @@
       "};",
       "",
       "export { ${TM_FILENAME_BASE/(.*)/${1}/} };",
-      ""
+      "",
     ],
-    "description": "Module"
+    "description": "Module",
   },
   "New Block": {
     "prefix": "newBlock",
@@ -102,9 +102,9 @@
       "};",
       "",
       "export { ${TM_FILENAME_BASE/(.*)/${1}/} };",
-      ""
+      "",
     ],
-    "description": "Block"
+    "description": "Block",
   },
   "New SVG": {
     "prefix": "newSvg",
@@ -121,17 +121,17 @@
       "};",
       "",
       "export default ${TM_FILENAME_BASE/(.*)/${1}/};",
-      ""
+      "",
     ],
-    "description": "New SVG"
+    "description": "New SVG",
   },
   "Map Loop": {
     "prefix": "map-loop",
-    "body": ["{$1.map($2 => (", "  $3", "))}"]
+    "body": ["{$1.map($2 => (", "  $3", "))}"],
   },
   "Dangerously Set HTML": {
     "prefix": "danger-html",
-    "body": ["<div dangerouslySetInnerHTML={{", "  __html: copy,", "}}", "/>"]
+    "body": ["<div dangerouslySetInnerHTML={{", "  __html: copy,", "}}", "/>"],
   },
   "Dump": {
     "prefix": "dump",
@@ -155,7 +155,7 @@
       "</code>",
       "",
       "",
-      ""
-    ]
-  }
+      "",
+    ],
+  },
 }
